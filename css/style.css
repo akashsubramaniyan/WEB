@@ -1,0 +1,259 @@
+*{
+  margin: 0px;
+  padding:0px;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  position:relative;
+  overflow: hidden;
+  background-image:linear-gradient(to right,#fff ,blue);
+  
+}
+nav{
+  width: 80%;
+  position: sticky;
+  align-items: center;
+  display: flex;
+  margin: 20px auto;
+  z-index: 1;
+}
+.logo{
+  flex-basis: 0%;
+}
+.logo img{
+  width:150px;
+  cursor:text;
+}
+.nav-links{
+  flex:1;
+  text-align:right;
+}
+.nav-links ul li{
+  list-style-type:none;
+  display: inline-block;
+  margin: 0px;
+}
+.nav-links ul li a{
+  text-decoration: none;
+  padding: 20px;
+  position:relative;
+  color:#fff;
+}
+
+.nav-links ul li a::after{
+  content: '';
+  position: absolute;
+  width: 0px;
+  left: 0;
+  height: 5px;
+  bottom: 1px;
+  background-color: rgb(251, 250, 250);
+  border-radius: 5px;
+  }
+  .nav-links ul li a:hover::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    right: 0;
+    border-radius: 5px;
+    height: 5px;
+    bottom: 1px;
+    background-color: rgb(251, 250, 250);
+
+    }
+.information{
+  width:1000px;
+  height: 1000px;
+  position: absolute;
+  top:50%;
+  left:-10%;
+  transform: translateY(-50%);
+}
+#circle{
+  width:1000px;
+  height: 1000px;
+  position: absolute;
+  top:0;
+  left:0;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+.feature img{
+  width:70px;
+}
+.feature{
+  position: absolute;
+  display: flex;
+  color:#fff;
+}
+.slider{
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  top:0;
+  left: 0;
+  z-index: 999;
+ }
+.tag{
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transform: translateX(-100%);
+  font-size: 40px;
+}
+
+.slider2{
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#fff;
+  top:0;
+  right: 0;
+  transform: translateX(100%);
+ }
+ .slider3{
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background-color:blue;
+  top:0;
+  left: 0;
+  transform: translateX(-100%);
+ }
+
+
+.feature div{
+  margin: 10px;
+}
+.one{
+  top:450px;
+  right:100px;
+}
+.two{
+  top:150px;
+  left:400px;
+  transform: rotate(-90deg);
+
+}
+.three{
+  bottom:450px;
+  left:100px;
+  transform: rotate(-180deg);
+
+}
+.four{
+  bottom:150px;
+  right:400px;
+  transform: rotate(-270deg);
+}
+.mobile{
+  width: 200px;
+  position: absolute;
+  top:50%;
+  left:400px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.controls{
+  position: absolute;
+  right:200px;
+  top:400px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+#upBtn{
+  width: 15px;
+  cursor: pointer;
+}
+.controls h3{
+  color:#fff;
+  margin: 15px auto;
+  text-align: center;
+}
+#downBtn{
+  width:15px;
+  cursor: pointer;
+  transform:rotate(180deg)
+}
+.over{
+  height:0px;
+  width:0px;
+  border-top: 500px solid #fff;
+  border-right: 500px solid transparent ;
+  border-bottom: 500px solid #fff;
+  border-left: 500px solid #fff;
+  position: absolute;
+  top:10px;
+  left:0px;
+}
+@media  screen  and (max-width:768px)  {
+  
+  .mobile{
+    width:100px;
+    position: absolute;
+    
+  }
+  .controls h3{
+    color:#fff;
+    margin-top: 30px;
+  }
+
+  .controls{
+    position: absolute;
+    right:160px;
+    top:600px;
+    width: 100px;
+    height: 100px;
+    transform: translateY(-50%);
+    background-color: #9c27b0;
+   }
+  #upBtn{
+    width: 20px;
+    cursor: pointer;
+    position: absolute;
+    left:30px;
+  }
+  
+  #downBtn{
+    width:20px;
+    cursor: pointer;
+    transform:rotate(180deg);
+    position: absolute;
+    left: 30px;
+  
+  }
+  .nav-links ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color:red;
+    display: flex;
+  }
+  #circle{
+    width:1000px;
+    height: 1000px;
+    position: absolute;
+    top:0;
+    left:-550px;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 0.5s;
+    background-color: #fff;
+  }
+  .feature{
+    position: absolute;
+    display: flex;
+    color:#000;
+}
+.feature img{
+  background-color: #9c27b0;
+}
+
+}
